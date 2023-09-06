@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myForm {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        gap: 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pageContainer">
+      <form id="myForm" onsubmit="return validateForm()">
+        <label for="fName" id="fNameLbl">First name:</label>
+        <input type="text" id="fNameInput" name="fName" />
+        <label for="lName" id="lNameLbl">Last name:</label>
+        <input type="text" name="lName" id="lNameInput" />
+        <label for="dob" id="dobLbl">Date of birth:</label>
+        <input type="date" name="dob" id="dobInput" />
+        <label for="email" id="emailLbl">Email: </label>
+        <input type="email" name="email" id="emailInput" />
+        <label for="tele" id="phoneLbl">Phone number:</label>
+        <input type="text" name="tele" id="phoneInput" />
+        <label for="role">Role:</label>
+        <input type="text" name="role" id="roleInput" />
+        <button id="submitBtn">Submit</button>
+        <h1 id="timerContainer"></h1>
+      </form>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
